@@ -18,7 +18,11 @@
     box-sizing: border-box; 
 }
 
-html { scroll-behavior: smooth; }
+html { 
+  scrollbar-width: thin;
+  scrollbar-color: var(--border) var(--bg-dark, transparent);
+  scroll-behavior: smooth;
+}
 
 body {
   background: var(--bg);
