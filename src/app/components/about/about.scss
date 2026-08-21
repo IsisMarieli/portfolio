@@ -1,0 +1,82 @@
+.about-container {
+    max-width: 1600px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 7rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    gap: 3rem;
+
+    @media (max-width: 768px) {
+        flex-direction: column;
+        gap: 2rem;
+    }
+}
+
+.about-label {
+    font-family: 'Space Mono', monospace;
+    color: var(--red);
+    font-size: 0.875rem;
+    letter-spacing: 0.1em;
+    margin-bottom: 0.5rem;
+}
+
+.about-title {
+    font-family: 'Space Grotesk', Arial, sans-serif;
+    color: var(--text);
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.about-text {
+    font-family: 'Inter', Arial, sans-serif;
+    color: var(--text-dim);
+    line-height: 1.7;
+    max-width: 32rem;
+}
+
+.about-skills {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+
+    hr {
+        width: 100%;
+        border: none;
+        border-top: 1px solid var(--border);
+        margin-bottom: 1.5rem;
+    }
+}
+
+.skill-row {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.skill-name {
+    font-family: 'Space Grotesk', Arial, sans-serif;
+    font-weight: 500;
+    color: var(--text);
+    width: 100px;
+    font-size: 1rem;
+    margin-right: 7.5rem;
+}
+
+.skill-bar {
+    width: 1.5rem;
+    height: 0.3rem;
+    background-color: var(--border);
+    border-radius: 4rem;
+    margin-right: 0.3rem;
+
+    &:last-child {
+        margin-right: 0;
+    }
+
+    &.filled {
+        border-radius: 4rem;
+        border-color: var(--red);
+        background: var(--red);
+    }
+}
