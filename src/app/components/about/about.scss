@@ -19,13 +19,21 @@
     font-size: 0.875rem;
     letter-spacing: 0.1em;
     margin-bottom: 0.5rem;
+
+    @media (max-width: 768px) {
+        text-align: center;
+    }
 }
 
 .about-title {
     font-family: 'Space Grotesk', Arial, sans-serif;
     color: var(--text);
-    font-size: 2rem;
+    font-size: 3rem;
     margin-bottom: 1.5rem;
+
+    @media (max-width: 768px) {
+        text-align: center;
+    }
 }
 
 .about-text {
@@ -33,6 +41,10 @@
     color: var(--text-dim);
     line-height: 1.7;
     max-width: 32rem;
+
+    @media (max-width: 768px) {
+        text-align: center;
+    }
 }
 
 .about-skills {
