@@ -1,0 +1,150 @@
+.experience-container {
+    max-width: 1600px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 7rem 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+
+    @media (max-width: 768px) {
+        align-items: center;
+    }
+}
+
+.experience-label {
+    font-family: 'Space Mono', monospace;
+    color: var(--red);
+    font-size: 0.875rem;
+    letter-spacing: 0.1em;
+    margin-bottom: 0.5rem;
+
+    @media (max-width: 768px) {
+        text-align: center;
+    }
+}
+
+.experience-title {
+    font-family: 'Space Grotesk', Arial, sans-serif;
+    color: var(--text);
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+
+    @media (max-width: 768px) {
+        text-align: center;
+    }
+}
+
+.card-experience {
+    width: 100%;
+    max-width: 2000px;
+    height: auto; 
+    background: var(--surface);
+    border: 1px solid var(--border);
+    padding: 24px 36px;
+    border-radius: 14px;
+    box-sizing: border-box;
+
+    @media (max-width: 768px) {
+        padding: 20px;
+    }
+}
+
+.content-card {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    height: 100%;
+
+    img {
+        width: 120px;
+        height: auto;
+        object-fit: contain;
+    }
+
+    @media (max-width: 768px) {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 1.5rem;
+    }
+}
+
+.sub-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: left;
+    min-width: 160px;
+    gap: 1rem;
+    font-family: 'Space Mono', monospace;
+
+    @media (max-width: 768px) {
+        align-items: center;
+        text-align: center;
+    }
+}
+
+.line {
+    width: 1px;
+    background-color: var(--border);
+    align-self: stretch;
+
+    @media (max-width: 768px) {
+        width: 100%;
+        height: 1px;
+        border: none;
+        background-color: var(--border);
+    }
+}
+
+.about-experience {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1;
+    gap: 0.75rem;
+
+    h3 {
+        font-family: 'Space Grotesk', Arial, sans-serif;
+        color: var(--text);
+        font-size: 1.25rem;
+    }
+
+    .about-desc {
+        font-family: 'Space Mono', monospace;
+        color: var(--text-dim);
+        font-size: 0.95rem;
+        line-height: 1.5;
+    }
+
+    .experience-tag {
+        @media (max-width: 768px) {
+            align-self: center;
+        }
+    }
+}
+
+.tags-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+
+    @media (max-width: 768px) {
+        justify-content: center;
+    }
+}
+
+.experience-tag {
+    font-family: 'Space Mono', monospace;
+    font-weight: 400;
+    font-size: 11px;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 4px 8px;
+    display: inline-block;
+    color: var(--text);
+    width: fit-content;
+}
