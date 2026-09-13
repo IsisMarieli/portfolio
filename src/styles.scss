@@ -26,14 +26,8 @@ html {
 
 body {
   background: var(--bg);
-  background-image:
-    linear-gradient(rgba(242, 239, 234, 0.04) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(242, 239, 234, 0.04) 1px, transparent 1px);
-  background-size: 40px 40px;
-  background-attachment: fixed;
   color: var(--text);
   font-family: 'Inter', Arial, sans-serif;
-  line-height: 1.6;
   overflow-x: hidden;
 }
 

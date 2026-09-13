@@ -102,8 +102,7 @@
 }
 
 .button-links a[href="#contact"]:hover {
-  background: var(--surface-hover);
-  border-color: var(--text-dim);
+  border-color: var(--red);
 }
 
 @media (max-width: 768px) {
